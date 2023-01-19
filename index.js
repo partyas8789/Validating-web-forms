@@ -35,7 +35,7 @@ function firstnamecheck() {
     }
     if(error.firstname==true && error.lastname==true && error.email==true && error.password==true && error.number==true && error.bio==true ){
         const submit=document.getElementById("submit")
-        submit.innerHTML=`<button >${"Submit"}</button>`
+        submit.innerHTML=`<button onclick="alertme()"  >${"Submit"}</button>`
     }
     else{
         const submit=document.getElementById("submit")
@@ -55,7 +55,7 @@ function lastnamecheck() {
     }
     if(error.firstname==true && error.lastname==true && error.email==true && error.password==true && error.number==true && error.bio==true ){
         const submit=document.getElementById("submit")
-        submit.innerHTML=`<button >${"Submit"}</button>`
+        submit.innerHTML=`<button onclick="alertme()" >${"Submit"}</button>`
     }
     else{
         const submit=document.getElementById("submit")
@@ -75,7 +75,7 @@ function emailcheck() {
     }
     if(error.firstname==true && error.lastname==true && error.email==true && error.password==true && error.number==true && error.bio==true ){
         const submit=document.getElementById("submit")
-        submit.innerHTML=`<button >${"Submit"}</button>`
+        submit.innerHTML=`<button onclick="alertme()" >${"Submit"}</button>`
     }
     else{
         const submit=document.getElementById("submit")
@@ -95,7 +95,7 @@ function passwordcheck() {
     }
     if(error.firstname==true && error.lastname==true && error.email==true && error.password==true && error.number==true && error.bio==true ){
         const submit=document.getElementById("submit")
-        submit.innerHTML=`<button >${"Submit"}</button>`
+        submit.innerHTML=`<button onclick="alertme()" >${"Submit"}</button>`
     }
     else{
         const submit=document.getElementById("submit")
@@ -115,7 +115,7 @@ function numbercheck() {
     }
     if(error.firstname==true && error.lastname==true && error.email==true && error.password==true && error.number==true && error.bio==true ){
         const submit=document.getElementById("submit")
-        submit.innerHTML=`<button >${"Submit"}</button>`
+        submit.innerHTML=`<button onclick="alertme()" >${"Submit"}</button>`
     }else{
         const submit=document.getElementById("submit")
         submit.innerHTML=""
@@ -134,10 +134,14 @@ function biocheck() {
     }
     if(error.firstname==true && error.lastname==true && error.email==true && error.password==true && error.number==true && error.bio==true ){
         const submit=document.getElementById("submit")
-        submit.innerHTML=`<button >${"Submit"}</button>`
+        submit.innerHTML=`<button onclick="alertme()" >${"Submit"}</button>`
     }
     else{
         const submit=document.getElementById("submit")
         submit.innerHTML=""
     }
+}
+
+function alertme() {
+    alert("Your application is submitted successfully")
 }
